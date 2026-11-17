@@ -68,9 +68,11 @@ de estrutura entre trabalho acadêmico, artigo, projeto e relatório.
   `openright`** — os exemplos oficiais usam `openright,twoside`, mas os trabalhos
   gerados aqui não), `lmodern`, `fontenc[T1]`, `inputenc[utf8]`, `indentfirst`,
   `graphicx`, `microtype` e `\usepackage[alf]{abntex2cite}`.
-- Ordem: pré-textuais (`\pretextual`: capa, folha de rosto, folha de aprovação,
-  resumo, abstract, sumário), textuais (`\textual`: introdução, desenvolvimento,
-  conclusão) e pós-textuais (`\postextual`: referências, apêndices/anexos).
+- Ordem: pré-textuais (`\pretextual`: capa, folha de rosto, resumo, abstract,
+  sumário), textuais (`\textual`: introdução, desenvolvimento, conclusão) e
+  pós-textuais (`\postextual`: referências, apêndices/anexos).
+- **Nunca incluir folha de aprovação**, em nenhum modelo (mesmo que o exemplo
+  oficial tenha).
 - Citações e referências via `.bib` + `\cite`/`\citeonline` (padrão autor-data).
   Usar apenas fontes reais; se o usuário não indicar obras, escolher referências
   verificáveis sobre o tema.

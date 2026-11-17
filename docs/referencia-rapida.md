@@ -24,7 +24,7 @@ Diferenças que mudam a estrutura (o resto do preâmbulo é igual):
 | Opções da classe | `12pt,oneside,a4paper,brazil` (sem `openright`) | `article,11pt,oneside,a4paper,brazil,sumario=tradicional` | `12pt,oneside,a4paper,brazil` (sem `openright`) | igual ao acadêmico |
 | Abertura | `\imprimircapa` + `\imprimirfolhaderosto*` | `\maketitle` | `\imprimircapa` + `\imprimirfolhaderosto` (sem `*`) | `\imprimircapa` + `\imprimirfolhaderosto*` |
 | Resumo | `resumo` + `resumo[Abstract]` (e outros idiomas) | `resumoumacoluna` (abstract opcional) | não tem | só `resumo` em português |
-| Folha de aprovação | sim (`folhadeaprovacao`) | não | não | não |
+| Folha de aprovação | **não usar** | **não usar** | **não usar** | **não usar** |
 | Sumário | `\tableofcontents*` | não | `\tableofcontents*` | `\tableofcontents*` |
 | Divisão do texto | `\chapter`/`\section` | `\section` (sem `\chapter`) | `\chapter`/`\section` | `\chapter`/`\section` |
 | Extra obrigatório | — | data de submissão/aprovação | — | formulário de identificação nos anexos |
@@ -84,9 +84,9 @@ Texto todo em preto, inclusive hyperlinks (os exemplos oficiais usam azul):
 \imprimirfolhaderosto*        % o * inclui a ficha catalográfica
 ```
 
-Ambientes: `fichacatalografica`, `errata`, `folhadeaprovacao` (com `\assinatura`),
-`dedicatoria`, `agradecimentos`, `epigrafe`, `resumo` (e `\begin{resumo}[Abstract]`
-para outro idioma), `siglas`, `simbolos`.
+Ambientes: `fichacatalografica`, `errata`, `dedicatoria`, `agradecimentos`,
+`epigrafe`, `resumo` (e `\begin{resumo}[Abstract]` para outro idioma), `siglas`,
+`simbolos`. **Não usar `folhadeaprovacao` em nenhum modelo.**
 
 Listas e sumário:
 
@@ -108,7 +108,7 @@ Listas e sumário:
 ## Projeto de pesquisa (NBR 15287)
 
 - `\imprimircapa` e `\imprimirfolhaderosto` sem `*`.
-- Sem resumo, abstract e folha de aprovação.
+- Sem resumo e abstract (e sem folha de aprovação, como em todos os modelos).
 - Listas e sumário como no trabalho acadêmico; texto dividido em capítulos
   (introdução, objetivos, justificativa, metodologia, cronograma).
 
