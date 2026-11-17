@@ -14,6 +14,9 @@ os exemplos oficiais.
 - Curso: Informática (técnico) — turma **2VINF09**
 - Autor: **Matheus Levi Fernandes da Silva**
 - Trabalhos em equipe: inserir os integrantes em **ordem alfabética**, junto do autor.
+- **Só criar o trabalho depois que o usuário informar a matéria** (disciplina) à qual
+  ele pertence. Se a matéria não vier no pedido, perguntar antes de gerar qualquer
+  arquivo.
 
 ## Estilo de escrita (obrigatório)
 - Português muito simples e didático, sem enrolação. Tom dostoievskiano e humanizado;
