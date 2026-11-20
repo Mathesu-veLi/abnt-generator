@@ -73,6 +73,9 @@ de estrutura entre trabalho acadêmico, artigo, projeto e relatório.
   pós-textuais (`\postextual`: referências, apêndices/anexos).
 - **Nunca incluir folha de aprovação**, em nenhum modelo (mesmo que o exemplo
   oficial tenha).
+- **Fonte: tudo em 12pt** — corpo, títulos, sumário, capa, folha de rosto, legendas,
+  fontes, notas, citações longas e quadros. Use o bloco "Fonte uniforme" de
+  `docs/referencia-rapida.md`; nunca use `\small`/`\footnotesize` no documento.
 - Citações e referências via `.bib` + `\cite`/`\citeonline` (padrão autor-data).
   Usar apenas fontes reais; se o usuário não indicar obras, escolher referências
   verificáveis sobre o tema.

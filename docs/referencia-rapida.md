@@ -62,6 +62,37 @@ Texto todo em preto, inclusive hyperlinks (os exemplos oficiais usam azul):
 }
 ```
 
+## Fonte uniforme (12pt em tudo)
+
+O padrão da classe usa tamanhos maiores nos títulos (`\Huge`, `\Large`, `\large`) e
+menores em legendas/notas (`\footnotesize`). Para deixar todo o texto em 12pt,
+inclua no preâmbulo:
+
+```latex
+% Títulos e textos reduzidos em 12pt
+\renewcommand{\ABNTEXchapterfontsize}{\normalsize}
+\renewcommand{\ABNTEXsectionfontsize}{\normalsize}
+\renewcommand{\ABNTEXsubsectionfontsize}{\normalsize}
+\renewcommand{\ABNTEXsubsubsectionfontsize}{\normalsize}
+\renewcommand{\ABNTEXsubsubsubsectionfontsize}{\normalsize}
+\renewcommand{\ABNTEXfontereduzida}{\normalsize}
+
+% Capa e folha de rosto têm tamanhos fixos na classe; troque por \normalsize
+\usepackage{etoolbox}
+\patchcmd{\imprimircapa}{\large}{\normalsize}{}{}
+\patchcmd{\imprimircapa}{\large}{\normalsize}{}{}
+\patchcmd{\imprimircapa}{\large}{\normalsize}{}{}
+\patchcmd{\imprimircapa}{\LARGE}{\normalsize}{}{}
+\patchcmd{\folhaderostocontent}{\large}{\normalsize}{}{}
+\patchcmd{\folhaderostocontent}{\large}{\normalsize}{}{}
+\patchcmd{\folhaderostocontent}{\large}{\normalsize}{}{}
+\patchcmd{\folhaderostocontent}{\large}{\normalsize}{}{}
+\patchcmd{\folhaderostocontent}{\large}{\normalsize}{}{}
+\patchcmd{\folhaderostocontent}{\Large}{\normalsize}{}{}
+```
+
+Não use `\small`/`\footnotesize` em quadros, tabelas ou qualquer trecho do texto.
+
 ## Dados do documento (usados na capa, folha de rosto etc.)
 
 ```latex
